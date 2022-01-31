@@ -1,7 +1,7 @@
  a =record(5) ;
  b =fft(a) ;
  t=1:1:40000 ;
- plot(t,b);
+ plot(t,b)
  
  for i=201:19800 
    b(i)=b(i-200);
@@ -15,4 +15,5 @@
 
  c=ifft(b) ;
 
-plot (t,c) ;
+plot (t,c) 
+sound(c);
